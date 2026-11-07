@@ -19,6 +19,7 @@ always_ff @ (posedge clk)
     else if (en) begin
         if (count == 0) begin
             tick <= 1'b1;
+
             count <= N;
             end
         else begin
@@ -27,3 +28,5 @@ always_ff @ (posedge clk)
             end
         end
 endmodule
+
+// V: 29 ($1d)
